@@ -49,8 +49,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     public static final String GESTURE_NAVIGATION_SETTINGS =
             "com.android.settings.GESTURE_NAVIGATION_SETTINGS";
 
-    private static final String LEFT_EDGE_SEEKBAR_KEY = "gesture_left_back_sensitivity";
-    private static final String RIGHT_EDGE_SEEKBAR_KEY = "gesture_right_back_sensitivity";
+   /*private static final String LEFT_EDGE_SEEKBAR_KEY = "gesture_left_back_sensitivity";
+    private static final String RIGHT_EDGE_SEEKBAR_KEY = "gesture_right_back_sensitivity";*/
 
     private static final String FULLSCREEN_GESTURE_PREF_KEY = "fullscreen_gestures";
     private static final String FULLSCREEN_GESTURE_OVERLAY_PKG = "com.aosp.overlay.systemui.navbar.gestural";
@@ -82,13 +82,13 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         super.onCreatePreferences(savedInstanceState, rootKey);
 
         final Resources res = getResources();
-        mDefaultBackGestureInset = res.getDimensionPixelSize(
+        /*mDefaultBackGestureInset = res.getDimensionPixelSize(
                 com.android.internal.R.dimen.config_backGestureInset);
         mBackGestureInsetScales = getFloatArray(res.obtainTypedArray(
                 com.android.internal.R.array.config_backGestureInsetScales));
 
         initSeekBarPreference(LEFT_EDGE_SEEKBAR_KEY);
-        initSeekBarPreference(RIGHT_EDGE_SEEKBAR_KEY);
+        initSeekBarPreference(RIGHT_EDGE_SEEKBAR_KEY);*/
         initFullscreenGesturePreference();
     }
 
@@ -128,7 +128,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         return SettingsEnums.SETTINGS_GESTURE_NAV_BACK_SENSITIVITY_DLG;
     }
 
-    private void initSeekBarPreference(final String key) {
+   /*private void initSeekBarPreference(final String key) {
         final LabeledSeekBarPreference pref = getPreferenceScreen().findPreference(key);
         pref.setContinuousUpdates(true);
         pref.setHapticFeedbackMode(SeekBarPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS);
@@ -163,7 +163,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
             Settings.Secure.putFloat(getContext().getContentResolver(), settingsKey, scale);
             return true;
         });
-    }
+    }*/
 
     private void initFullscreenGesturePreference() {
         findPreference(FULLSCREEN_GESTURE_PREF_KEY)

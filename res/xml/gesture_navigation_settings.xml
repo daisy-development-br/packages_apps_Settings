@@ -37,7 +37,7 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
+<!--    <PreferenceCategory
         android:key="back_sensitivity_category"
         android:persistent="false"
         android:title="@string/back_sensitivity_dialog_title">
@@ -57,7 +57,7 @@
             android:selectable="true"
             settings:textStart="@string/low_label"
             settings:textEnd="@string/high_label"/>
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
     <PreferenceCategory
         android:key="other_controls_category"
@@ -70,10 +70,10 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
-    <com.android.settingslib.widget.FooterPreference
+<!--    <com.android.settingslib.widget.FooterPreference
         android:key="gesture_navigation_settings_footer"
         android:title="@string/back_sensitivity_dialog_message"
         android:selectable="false"
-        settings:searchable="false"/>
+        settings:searchable="false"/> -->
 </PreferenceScreen>
 
