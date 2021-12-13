@@ -167,7 +167,7 @@
 
         <SwitchPreference
             android:key="tap_to_wake"
-            android:summary="@string/tap_to_wake_summary"
+            android:summary="@string/tap_to_wake_summary_pixel"
             android:title="@string/tap_to_wake" />
 
         <ListPreference
